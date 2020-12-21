@@ -1,0 +1,9 @@
+meta_title: DAWG | Dog Alliance of Williamburg & Greenpoint
+---
+meta_description: DAWG is the Dog Alliance of Williamburg & Greenpoint
+---
+_discoverable: yes
+---
+_template: page.html
+---
+body: <div class="text-center"><img src="/static/DAWG_TAGLINE.jpg" class="img-fluid"/></div>

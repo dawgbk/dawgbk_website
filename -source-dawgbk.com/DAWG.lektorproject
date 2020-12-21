@@ -1,0 +1,9 @@
+[project]
+name = Dog Alliance of Williamsburg & Greenpoint
+url = https://dawgbk.com
+
+[servers.production]
+name = Production
+enabled = yes
+default = yes
+target = rsync://dawgbk.com/home/dawgbk/webroot/dawgbk.com
