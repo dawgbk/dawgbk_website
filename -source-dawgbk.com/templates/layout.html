@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -30,7 +30,7 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{% block twitter_title %}{% endblock %}">
 	<meta name="twitter:description" content="{% block twitter_description %}{% endblock %}">
-	<meta name="twitter:image" content="https://dawgbk.com/static/DAWG_TAGLINE.jpg">	
+	<meta name="twitter:image" content="https://dawgbk.com/static/DAWG_TAGLINE.jpg">
 
 	{% from "macros/analytics_google.html" import render_analytics_google %}
 	{{ render_analytics_google() }}
@@ -38,11 +38,58 @@
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Override CSS -->
+    <link rel="stylesheet" href="/static/style.css">
   </head>
-  <body>
-  <div class="container">
-	  {% block body %}{% endblock %}
-  </div>
+  <body class="d-flex flex-column h-100">
+    <header>
+		<div class="collapse bg-footer" id="navbarHeader">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-sm-8 col-md-7 py-4">
+				<h4 class="text-white">About</h4>
+				<p class="text-muted">DAWG is the Dog Alliance of Williamsburg and Greenpoint.</p>
+			  </div>
+			  <div class="col-sm-4 offset-md-1 py-4">
+				<h4 class="text-white">Contact Us</h4>
+				<ul class="list-unstyled">
+				  <li><a href="#" class="text-white">Follow on Twitter</a></li>
+				  <li><a href="#" class="text-white">Like on Facebook</a></li>
+				  <li><a href="#" class="text-white">Follow on Instagram</a></li>
+				  <li><a href="/about" class="text-white">About</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="navbar navbar-dark bg-header shadow-sm">
+		  <div class="container d-flex justify-content-between">
+			<a href="#" class="navbar-brand d-flex align-items-center">
+			  <img src="/static/fpo-dawg-nav.png" alt="DAWG">
+			</a>
+			<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  </div>
+		</div>
+    </header>
+    <main role="main" class="flex-shrink-0">
+	{% block callout %}{% endblock %}
+	{% block body %}{% endblock %}
+	</main>
+	<footer class="footer mt-auto py-3">
+		<div class="container">
+			<ul class="footer-links">
+				<li>twitter</li>
+				<li>email</li>
+				<li>instagram</li>
+				<li>facebook</li>
+			</ul>
+		</div>
+	</footer>
+  
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -7,3 +7,9 @@ name = Production
 enabled = yes
 default = yes
 target = rsync://dawgbk.com/home/dawgbk/webroot/dawgbk.com
+
+[servers.staging]
+name = Staging
+enabled = yes
+default = no
+target = rsync://dawgbk.com/home/dawgbk/webroot/staging.dawgbk.com

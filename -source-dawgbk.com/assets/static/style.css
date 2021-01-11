@@ -1,0 +1,104 @@
+/* 
+	light sections:
+		background- #EDE0CC
+		text- #C7522F
+*/
+header, footer {
+	background-color: #EDE0CC;
+	color: #C7522F;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(199,82,47,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-brand img {
+	max-width: 200px;
+	max-height: 40px;
+}
+.callout-banner {
+	background: #000;
+	color: #FFF;
+	text-align: center;
+}
+.callout-banner p {
+	margin: 5px 0 5px 0;
+}
+.callout-banner a {
+	color: inherit;
+	text-decoration: underline;
+}
+.callout-banner a:hover {
+	color: #EDE0CC;
+	text-decoration: none;
+}
+
+.footer-links {
+	list-style: none;
+	text-align: center;
+	
+}
+	.footer-links li {
+		display: inline-block;
+	}
+
+
+.splash-mission {
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+.splash-sections .splash-section {
+	text-align: center;
+	display: block;
+}		
+.splash-sections .icon {
+
+}
+.splash-sections .text {
+	background-color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+.splash-sections a:hover {
+	text-decoration: none;
+}
+
+.splash-section-1 {
+	background-color: #000;
+	color: #000;
+}
+.splash-section-1:hover {
+	background-color: #FFF;
+}
+.splash-section-1:hover .text {
+	background-color: #000;
+	color: #FFF;
+}
+
+.splash-section-2 {
+	background-color: #C7522F;
+	color: #C7522F;
+}
+.splash-section-2:hover {
+	background-color: #FFF;
+}
+.splash-section-2:hover .text {
+	background-color: #C7522F;
+	color: #FFF;
+}
+
+.splash-section-3 {
+	background-color: #D9E021;
+	color: #8CC63F;
+}
+.splash-section-3:hover {
+	background-color: #FFF;
+}
+.splash-section-3:hover .text {
+	background-color: #D9E021;
+	color: #FFF;
+}

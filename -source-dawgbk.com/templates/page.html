@@ -1,14 +1,24 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block meta_title %}{{ this.meta_title or this.title }}{% endblock %}
+{% block meta_title %}{{ this.meta_title or this.title}}{% endblock %}
 {% block meta_description %}{{ this.meta_description }}{% endblock %}
 {% block og_title %}{{ this.og_title or this.meta_title or this.title }}{% endblock %}
 {% block og_description %}{{ this.og_description or this.meta_description }}{% endblock %}
 {% block twitter_title %}{{ this.twitter_title or this.og_title or this.meta_title or this.title }}{% endblock %}
 {% block twitter_description %}{{ this.twitter_description or this.og_description or this.meta_description }}{% endblock %}
+{% block callout %}
+	{% if this.callout -%}
+	<div class="callout-banner">
+	  <div class="container">
+		<div class="row">
+			<div class="col-12">{{ this.callout }}</div>
+		</div>
+	  </div>
+	</div>
+    {% endif %}
+{% endblock %}
 {% block body %}
-  <div class="row">
-  	<div class="col-12"><h2>{{ this.title }}</h2></div>
-  </div>
+<div class="container-fluid">
   {{ this.body }}
+</div>
 {% endblock %}
