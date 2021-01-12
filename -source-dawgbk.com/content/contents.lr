@@ -12,15 +12,15 @@ body:
 
 <div class="row no-gutters">
     <div class="col-12">
-		<img src="/static/fpo-splash-a.png" class="img-fluid"/>
+		<img src="/static/fpo/-splash-a.png" class="img-fluid"/>
 		<div class="splash-mission">our mission</div>
-		<img src="/static/fpo-splash-b.png" class="img-fluid"/>
+		<img src="/static/fpo/-splash-b.png" class="img-fluid"/>
     </div>
 </div>
 <div class="row no-gutters splash-sections">
     <div class="col-4">
     	<a href="/join" class="splash-section splash-section-1">
-    		<div class="icon"><img src="/static/fpo-splash-btn-1.png"/></div>
+    		<div class="icon"><img src="/static/fpo/-splash-btn-1.png"/></div>
 			<div class="text">
 		    	Join
 	    	</div>
@@ -28,7 +28,7 @@ body:
     </div>
     <div class="col-4">
     	<a href="/participate" class="splash-section splash-section-2">
-    		<div class="icon"><img src="/static/fpo-splash-btn-2.png"/></div>
+    		<div class="icon"><img src="/static/fpo/-splash-btn-2.png"/></div>
 			<div class="text">
 		    	Participate
 	    	</div>
@@ -36,7 +36,7 @@ body:
     </div>
     <div class="col-4">
     	<a href="/about" class="splash-section splash-section-3">
-    		<div class="icon"><img src="/static/fpo-splash-btn-3.png"/></div>
+    		<div class="icon"><img src="/static/fpo/-splash-btn-3.png"/></div>
 			<div class="text">
 		    	About
 	    	</div>

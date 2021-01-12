@@ -1,5 +1,67 @@
 {% extends "page.html" %}
 {% block body %}
+<style type="text/css">
+.splash-mission {
+	text-align: center;
+	padding: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	
+}
+
+.splash-sections .splash-section {
+	text-align: center;
+	display: block;
+}		
+.splash-sections .icon {
+
+}
+.splash-sections .text {
+	background-color: #FFF;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 10px 0 10px 0;
+}
+.splash-sections a:hover {
+	text-decoration: none;
+}
+
+.splash-section-1 {
+	background-color: #000;
+	color: #000;
+}
+.splash-section-1:hover {
+	background-color: #FFF;
+}
+.splash-section-1:hover .text {
+	background-color: #000;
+	color: #FFF;
+}
+
+.splash-section-2 {
+	background-color: #C7522F;
+	color: #C7522F;
+}
+.splash-section-2:hover {
+	background-color: #FFF;
+}
+.splash-section-2:hover .text {
+	background-color: #C7522F;
+	color: #FFF;
+}
+
+.splash-section-3 {
+	background-color: #D9E021;
+	color: #8CC63F;
+}
+.splash-section-3:hover {
+	background-color: #FFF;
+}
+.splash-section-3:hover .text {
+	background-color: #D9E021;
+	color: #FFF;
+}
+</style>
 <div class="container-fluid px-0">
   {{ this.body }}
 </div>
