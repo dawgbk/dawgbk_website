@@ -1,4 +1,4 @@
-/* 
+/*
 	light sections:
 		background- #EDE0CC
 		text- #C7522F
@@ -35,10 +35,21 @@ header, footer {
 .footer-links {
 	list-style: none;
 	text-align: center;
-	
 }
 	.footer-links li {
 		display: inline-block;
 	}
+	.footer-links img {
+		width: 45px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.footer-links li:hover {
+		-webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
+	  	filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
+	}
+
+
+
 
 

@@ -6,17 +6,6 @@
 {% block og_description %}{{ this.og_description or this.meta_description }}{% endblock %}
 {% block twitter_title %}{{ this.twitter_title or this.og_title or this.meta_title or this.title }}{% endblock %}
 {% block twitter_description %}{{ this.twitter_description or this.og_description or this.meta_description }}{% endblock %}
-{% block callout %}
-	{% if this.callout -%}
-	<div class="callout-banner">
-	  <div class="container">
-		<div class="row">
-			<div class="col-12">{{ this.callout }}</div>
-		</div>
-	  </div>
-	</div>
-    {% endif %}
-{% endblock %}
 {% block body %}
 <div class="container-fluid">
   {{ this.body }}
