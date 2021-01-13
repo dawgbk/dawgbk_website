@@ -9,6 +9,10 @@
 	max-width: 960px;
 }
 
+#hamburger {
+	display: none;
+}
+
 header, footer {
 	background-color: #EDE0CC;
 	color: #C7522F;
@@ -25,6 +29,9 @@ header, footer {
 	background: #000;
 	color: #FFF;
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
 }
 .callout-banner p {
 	margin: 5px 0 5px 0;
