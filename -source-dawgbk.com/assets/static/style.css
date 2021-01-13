@@ -3,6 +3,12 @@
 		background- #EDE0CC
 		text- #C7522F
 */
+
+/* lock the screen size to the hero pix */
+.container, .container-fluid {
+	max-width: 960px;
+}
+
 header, footer {
 	background-color: #EDE0CC;
 	color: #C7522F;
@@ -50,6 +56,9 @@ header, footer {
 	}
 
 
+.clear {
+	clear: both;
+}
 
 
 
