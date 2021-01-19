@@ -2,6 +2,10 @@
 {% block body %}
 <style type="text/css">
 
+.max960 {
+	max-width: 960px;
+}
+
 #splash-hero-1{
 	clear: both;
 }
@@ -24,13 +28,11 @@
 	color: #FFF;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
-	font-size: 3.5vw;
+	font-size: 3.3vw;
 	margin-top: 10px;
 	-webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
 	filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
 }
-
-
 
 #splash-hero-2{
 	clear: both;
@@ -48,6 +50,7 @@
 	z-index: 2;
 	text-align: center;
 	width: 100%;
+	max-width: 960px;
 	margin-top: 15%;
 }
 #splash-hero-2-overlay ul li{
@@ -61,7 +64,6 @@
 	margin-top: 10px;
 }
 
-
 #splash-mission {
 	text-align: center;
 	padding: 20px;
@@ -73,10 +75,9 @@
 	color: #C7522F;
 }
 
-
-
 .splash-buttons {
 	margin-bottom: 40px;
+	max-width: 960px;
 }
 
 .splash-buttons .splash-button {
@@ -153,12 +154,22 @@
 .splash-button-3:hover svg {
 	fill: #8CC63F;
 }
+
+@media screen and (min-width: 900px) {
+  #splash-hero-1-overlay .text {
+     font-size: 33px;
+  }
+  #splash-hero-2-overlay ul li{
+     font-size: 50px;
+  }
+}
+
 </style>
 {% block callout %}
 	{% if this.callout -%}
 	<div class="callout-banner">
 	  <div class="container">
-		<div class="row">
+		<div class="row max960">
 			<div class="col-12">{{ this.callout }}</div>
 		</div>
 	  </div>
@@ -183,7 +194,6 @@
 			<div id="splash-mission">join our mission</div>
 			</div>
 		</div>
-	</div>
 	<div class="row no-gutters">
 		<div class="col-12">
 			<div id="splash-hero-2">
@@ -201,7 +211,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="clear"></div>
 	<div class="row no-gutters splash-buttons">
 		<div class="col-4">
 			<a href="/join" class="splash-button splash-button-1">
