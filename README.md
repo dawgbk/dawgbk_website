@@ -27,8 +27,10 @@ How is the website built and updated?
 The website is generated using [Lektor](https://www.getlektor.com/), a Content
 Management System that generates static websites.
 
-The website uses the [Bootstrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-CSS and HTML Framework.
+The website uses the
+[Bootstrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+CSS and HTML Framework. Bootstrap offers a CSS Grid with multiple components that
+reliable work across the most popular platforms, browsers and devices.
 
 Third Party embedded widgets are used for additional functionality.
 
@@ -44,12 +46,21 @@ Instructions
 To build or update the website, Lektor must be installed.
 
 1. Install Lektor 
-   There are detailed instructions for Mac, Linux and Windows on https://www.getlektor.com/downloads/
-   
+   There are detailed instructions for Mac, Linux and Windows on
+   https://www.getlektor.com/downloads/
+
 2. Download this Source Code
-   The source code repository is managed by `git` and hosted at GitHub https://github.com/jvanasco/dawgbk
+   The source code repository is managed by `git` and hosted at GitHub https://github.com/dawgbk/dawgbk_website
    You can use any git client - commandline or GUI - to download the website.
    Git and Github are like a Dropbox or Google Drive, specifically used to host code.
+   
+   Popular Clients
+   * Git Commandline
+   * Github Desktop https://desktop.github.com/
+   * SourceTree https://www.sourcetreeapp.com/
+   
+   For more information: https://git-scm.com/download/gui/windows
+   
 
 3. Navigate to the source directory and run Lektor
 
@@ -64,7 +75,7 @@ On a Mac, the terminal commands might look like this:
     cd websites
     
     # clone the git repository
-    git clone git@github.com:jvanasco/dawgbk.git
+    git clone git@github.com:dawgbk/dawgbk_website.git
     cd dawgbk
     cd ./-source-dawgbk.com
     
@@ -97,5 +108,5 @@ When you want to publish the website, there are two steps:
     # upload the changes
     git push 
 
-  If using a GUI, there will be a button for 'commit' and another button for 'push'.
+  If using a GUI, there may be a button for 'commit' and another button for 'push'.
 
