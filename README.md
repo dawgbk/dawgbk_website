@@ -40,6 +40,8 @@ machine and then installed on the Web Server.  A member of DAWG who has already
 gone through the process of installing SSH Keys on the server will be able to
 help you get set up.
 
+SSH Keys are also used to authenticate against Github.
+
 Instructions 
 ============
 
