@@ -14,7 +14,8 @@ website, https://dawgbk.com
 How is this organized?
 ======================
 
-* `-source-dawgbk.com` A directory containing the source code to generat the site
+* `-source-dawgbk.com` A directory containing the source code to generate the
+  site
 * `assets` Assets used to build the site
 * `dawgbk.com` An untracked directory (via `.gitignore`) that contains a built
   version of the website.
@@ -24,7 +25,7 @@ How is the website built and updated?
 =====================================
 
 The website is generated using [Lektor](https://www.getlektor.com/), a Content
-Mangement System that generates static websites.
+Management System that generates static websites.
 
 The website uses the [Bootstrap 4.5](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 CSS and HTML Framework.
@@ -32,9 +33,10 @@ CSS and HTML Framework.
 Third Party embedded widgets are used for additional functionality.
 
 Access to the website server/host (in the cloud) is handled with "SSH Keys".
-SSH Keys are cryptographically secure tokens that are generated on a User's machine
-and then installed on the Web Server.  A member of DAWG who has already gone through
-the process of installing SSH Keys on the server will be able to help you get set up.
+SSH Keys are cryptographically secure tokens that are generated on a User's
+machine and then installed on the Web Server.  A member of DAWG who has already
+gone through the process of installing SSH Keys on the server will be able to
+help you get set up.
 
 Instructions 
 ============
@@ -44,11 +46,11 @@ To build or update the website, Lektor must be installed.
 1. Install Lektor 
    There are detailed instructions for Mac, Linux and Windows on https://www.getlektor.com/downloads/
    
-2. Download this source code
+2. Download this Source Code
    The source code repository is managed by `git` and hosted at GitHub https://github.com/jvanasco/dawgbk
    You can use any git client - commandline or GUI - to download the website.
    Git and Github are like a Dropbox or Google Drive, specifically used to host code.
-   
+
 3. Navigate to the source directory and run Lektor
 
 
