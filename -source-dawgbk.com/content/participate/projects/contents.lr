@@ -1,0 +1,7 @@
+_model: page
+---
+title: Projects
+---
+_discoverable: yes
+---
+_template: directory_index.html

@@ -4,10 +4,27 @@
 		text- #C7522F
 */
 
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
 /* lock the screen size to the hero pix */
 .container, .container-fluid {
 	max-width: 960px;
 }
+
+/* marings for text pages */
+.container-page {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+  .container-page p + h2 
+, .container-page ul + h2 
+{
+	margin-top: 40px;
+}
+
 
 #hamburger {
 	display: none;
@@ -21,10 +38,29 @@ header, footer {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(199,82,47,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+
+/* logo changes to effect size and 1/2 height padding as per chana */
 .navbar-brand img {
-	max-width: 200px;
-	max-height: 40px;
+	min-height: 42px;
+	max-height: 42px;
+	max-width: 180px;
 }
+.navbar {
+	padding-top:21px;
+	padding-bottom:21px;
+}
+.navbar-brand {
+	padding-top: none;
+	padding-bottom: none;
+}
+
+@media screen and (min-width: 960px) {
+	.navbar {
+		padding-left: 0;
+	}
+}
+
+
 .callout-banner {
 	background: #000;
 	color: #FFF;
@@ -61,6 +97,10 @@ header, footer {
 		-webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
 	  	filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
 	}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #C7522F;
+}
 
 .clear {
 	clear: both;

@@ -1,0 +1,11 @@
+_model: page
+---
+title: Sitemap
+---
+_template: sitemap.html
+---
+body: 
+---
+_discoverable: no
+---
+_hidden: no

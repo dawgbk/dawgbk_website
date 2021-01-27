@@ -42,6 +42,7 @@
 	top: 0;
 	left: 0;
 	z-index: 1;
+	filter: brightness(80%);
 }
 #splash-hero-2-overlay {
 	position: absolute;
@@ -51,12 +52,12 @@
 	text-align: center;
 	width: 100%;
 	max-width: 960px;
-	margin-top: 15%;
+	margin-top: 11%;
 }
 #splash-hero-2-overlay ul li{
-	color: #EDE0CC;
+	color: #FFF;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	font-weight: 600;
 	text-align: center;
 	font-size: 6vw;
 	-webkit-filter: drop-shadow( 2px 2px 1px rgba(0, 0, 0, .7));
@@ -67,8 +68,8 @@
 #splash-mission {
 	text-align: center;
 	padding: 20px;
-	font-style: italic;
-	font-weight: 500;
+	/* font-style: italic; */
+	font-weight: 400;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
@@ -98,7 +99,7 @@
 	font-weight: 500;
 	font-style: italic;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	padding: 10px 0 10px 0;
 }
 .splash-buttons a:hover {
@@ -155,6 +156,22 @@
 	fill: #8CC63F;
 }
 
+@media screen and (min-width: 600px) {
+	.splash-buttons .text {
+		font-size: 1.7em;
+	}
+}
+@media screen and (min-width: 700px) {
+	.splash-buttons .text {
+		font-size: 1.8em;
+	}
+}
+@media screen and (min-width: 800px) {
+	.splash-buttons .text {
+		font-size: 1.9em;
+	}
+}
+
 @media screen and (min-width: 900px) {
   #splash-hero-1-overlay .text {
      font-size: 33px;
@@ -163,6 +180,8 @@
      font-size: 50px;
   }
 }
+
+
 
 </style>
 {% block callout %}

@@ -8,6 +8,15 @@
 {% block twitter_description %}{{ this.twitter_description or this.og_description or this.meta_description }}{% endblock %}
 {% block body %}
 <div class="container-fluid container-page">
-  {{ this.body }}
+	{{ this.body }}
+	<ul class="directory-index">
+	  {% for page in this.children recursive %}
+	  <li><a href="{{ page|url }}">{{ page.record_label }}</a>
+		{% if page.children %}
+		  <ul>{{ loop(page.children|sort(attribute='path')) }}</ul>
+		{% endif %}
+	  </li>
+	  {% endfor %}
+	</ul>
 </div>
 {% endblock %}
