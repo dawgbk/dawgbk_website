@@ -84,6 +84,10 @@ header, footer {
 .footer-links {
 	list-style: none;
 	text-align: center;
+	/* set in bootstrap for the ul
+		margin-bottom: 1rem;
+	*/
+	margin-top: 1rem;  /* needed to balance against bootstrap */
 }
 	.footer-links li {
 		display: inline-block;
