@@ -13,7 +13,7 @@
 	max-width: 960px;
 }
 
-/* marings for text pages */
+/* margins for text pages */
 .container-page {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -109,4 +109,27 @@ h1, h2, h3, h4, h5, h6 {
 .clear {
 	clear: both;
 }
+
+/* drop "Community" further under "Events" on /participate */ 
+
+.container-page h1 + h2 {
+    margin-top: 40px;
+}
+
+.container-page h2 + ul li {
+    color: black;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.container-page h1 ~ hr {
+    margin-top: 40px;
+}
+
+.container-page hr + h1 {
+    margin-top: 40px;
+}
+
+
+
 
