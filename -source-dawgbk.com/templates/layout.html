@@ -7,30 +7,31 @@
 	<link rel="icon" type="image/png" href="/static/favicon-16.png" sizes="16x16">
 	<link rel="icon" type="image/png" href="/static/favicon-32.png" sizes="32x32">
 
-	<title>{% block title %}Dog Alliance of Williamburg & Greenpoint{% endblock %}</title>
+	<title>{% block title %}{% endblock %}</title>
 
     <meta name="title" content="{% block meta_title %}{% endblock %}"/>
     <meta name="description" content="{% block meta_description %}{% endblock %}"/>
     <meta name="author" content="DAWG"/>
     <link href="{{ this.url_path | url(external=True) }}" rel="canonical">
 
-	<meta property="og:title" content="{% block og_title %}{% endblock %}" />
+	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Dog Alliance of Williamburg & Greenpoint" />
+	<meta property="og:title" content="{% block og_title %}{% endblock %}" />
 	<meta property="og:url" content="{{ this.url_path | url(external=True) }}" />
 	<meta property="og:description" content="{% block og_description %}{% endblock %}" />
-	<meta property="og:type" content="website" />
 	
-	<meta property="og:image" content="https://dawgbk.com/static/DAWG_TAGLINE.jpg" />
-	<meta property="og:image:secure_url" content="https://dawgbk.com/static/DAWG_TAGLINE.jpg" />
+	<meta property="og:image" content="https://staging.dawgbk.com/static/defaults/1224X512_inner_980x512_NOTEXT.png" />
+	<meta property="og:image:secure_url" content="https://staging.dawgbk.com/static/defaults/1224X512_inner_980x512_NOTEXT.png" />
 	<meta property="og:image:type" content="image/png" />
-	<meta property="og:image:width" content="600" />
-	<meta property="og:image:height" content="315" />
+	<meta property="og:image:width" content="1224" />
+	<meta property="og:image:height" content="512" />
 	<meta property="og:image:alt" content="Dog Alliance of Williamburg & Greenpoint" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{% block twitter_title %}{% endblock %}">
 	<meta name="twitter:description" content="{% block twitter_description %}{% endblock %}">
-	<meta name="twitter:image" content="https://dawgbk.com/static/DAWG_TAGLINE.jpg">
+	<meta name="twitter:image" content="https://dawgbk.com/static/defaults/1200X600_NOTEXT.png" />
+	<meta name="twitter:image:alt" content="A very happy pup, running across a green lawn, smiling as they hold a big stick in their mouth." />
 
 	{% from "macros/analytics_google.html" import render_analytics_google %}
 	{{ render_analytics_google() }}

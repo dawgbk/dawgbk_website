@@ -1,11 +1,17 @@
 {% extends "layout.html" %}
-{% block title %}{{ this.title }}{% endblock %}
-{% block meta_title %}{{ this.meta_title or this.title}}{% endblock %}
-{% block meta_description %}{{ this.meta_description }}{% endblock %}
-{% block og_title %}{{ this.og_title or this.meta_title or this.title }}{% endblock %}
-{% block og_description %}{{ this.og_description or this.meta_description }}{% endblock %}
-{% block twitter_title %}{{ this.twitter_title or this.og_title or this.meta_title or this.title }}{% endblock %}
-{% block twitter_description %}{{ this.twitter_description or this.og_description or this.meta_description }}{% endblock %}
+
+{% set default_title = "DAWG: Dog Alliance of Williamsburg & Greenpoint" %}
+{% set default_description = """The Dog Alliance of Williamsburg & Greenpoint (DAWG) is a local community organization that works on behalf of local dogs and their owners. We promote responsible dog ownership, dog health and advocate for dog friendly policies like off leash spaces and the development of new and larger dog runs. We recognize that we’re a part of a broader community and seek to work with other stakeholders to achieve mutually beneficial outcomes.""" %}
+
+{% block title %}{{ this.title or default_title}}{% endblock %}
+{% block meta_title %}{{ this.meta_title or this.title or default_title}}{% endblock %}
+{% block og_title %}{{ this.og_title or this.meta_title or this.title or default_title }}{% endblock %}
+{% block twitter_title %}{{ this.twitter_title or this.og_title or this.meta_title or this.title or default_title }}{% endblock %}
+
+{% block meta_description %}{{ this.meta_description or default_description}}{% endblock %}
+{% block og_description %}{{ this.og_description or this.meta_description or default_description}}{% endblock %}
+{% block twitter_description %}{{ this.twitter_description or this.og_description or this.meta_description or default_description}}{% endblock %}
+
 {% block body %}
 <div class="container-fluid container-page">
   {{ this.body }}
